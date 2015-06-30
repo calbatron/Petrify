@@ -7,7 +7,7 @@ var colors 					= 	require('colors/safe');
 var mkdirp 					=	require('mkdirp');
 
 //vars
-var appUrl 					= 	"http://thespace-feserver-batr6vjumf11-1173817686.eu-west-1.elb.amazonaws.com";
+var appUrl 					= 	"http://www.thespace.org";
 var siteMapUri 				= 	"/sitemap.xml";
 var fullUrl 				= 	appUrl + siteMapUri;
 var totalNumberOfFiles		=	0;
