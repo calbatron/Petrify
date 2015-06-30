@@ -1,0 +1,240 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'xml2json' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.4
+4 verbose read json /var/www/public/package.json
+5 warn package.json Petrify@0.0.0 No README.md file found!
+6 verbose read json /var/www/public/node_modules/colors/package.json
+7 verbose read json /var/www/public/node_modules/mkdirp/package.json
+8 verbose read json /var/www/public/node_modules/q/package.json
+9 verbose read json /var/www/public/node_modules/unirest/package.json
+10 verbose read json /var/www/public/node_modules/xml2js/package.json
+11 verbose from cache /var/www/public/package.json
+12 verbose readDependencies using package.json deps
+13 verbose cache add [ 'xml2json', null ]
+14 verbose cache add name=undefined spec="xml2json" args=["xml2json",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'xml2json',
+15 verbose parsed url   path: 'xml2json',
+15 verbose parsed url   href: 'xml2json' }
+16 silly lockFile 4a765045-xml2json xml2json
+17 verbose lock xml2json /home/vagrant/.npm/4a765045-xml2json.lock
+18 silly lockFile 4a765045-xml2json xml2json
+19 silly lockFile 4a765045-xml2json xml2json
+20 verbose addNamed [ 'xml2json', '' ]
+21 verbose addNamed [ null, '' ]
+22 silly lockFile 58d55085-xml2json xml2json@
+23 verbose lock xml2json@ /home/vagrant/.npm/58d55085-xml2json.lock
+24 silly addNameRange { name: 'xml2json', range: '', hasData: false }
+25 verbose url raw xml2json
+26 verbose url resolving [ 'https://registry.npmjs.org/', './xml2json' ]
+27 verbose url resolved https://registry.npmjs.org/xml2json
+28 info trying registry request attempt 1 at 14:32:55
+29 verbose etag "6BBY29LK5EGP1ODIJYD1MQXIN"
+30 http GET https://registry.npmjs.org/xml2json
+31 http 304 https://registry.npmjs.org/xml2json
+32 silly registry.get cb [ 304,
+32 silly registry.get   { date: 'Mon, 29 Jun 2015 14:46:12 GMT',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     'cache-control': 'max-age=60',
+32 silly registry.get     etag: '"6BBY29LK5EGP1ODIJYD1MQXIN"',
+32 silly registry.get     age: '0',
+32 silly registry.get     connection: 'keep-alive',
+32 silly registry.get     'x-served-by': 'cache-lhr6325-LHR',
+32 silly registry.get     'x-cache': 'HIT',
+32 silly registry.get     'x-cache-hits': '1',
+32 silly registry.get     'x-timer': 'S1435589172.968482,VS0,VE87',
+32 silly registry.get     vary: 'Accept' } ]
+33 verbose etag xml2json from cache
+34 silly addNameRange number 2 { name: 'xml2json', range: '', hasData: true }
+35 silly addNameRange versions [ 'xml2json',
+35 silly addNameRange   [ '0.1.0',
+35 silly addNameRange     '0.1.1',
+35 silly addNameRange     '0.2.0',
+35 silly addNameRange     '0.2.1',
+35 silly addNameRange     '0.2.2',
+35 silly addNameRange     '0.2.3',
+35 silly addNameRange     '0.2.4',
+35 silly addNameRange     '0.3.0',
+35 silly addNameRange     '0.3.1',
+35 silly addNameRange     '0.3.2',
+35 silly addNameRange     '0.4.0',
+35 silly addNameRange     '0.5.0',
+35 silly addNameRange     '0.5.1',
+35 silly addNameRange     '0.6.0',
+35 silly addNameRange     '0.6.1',
+35 silly addNameRange     '0.6.2',
+35 silly addNameRange     '0.7.0',
+35 silly addNameRange     '0.7.1' ] ]
+36 verbose addNamed [ 'xml2json', '0.7.1' ]
+37 verbose addNamed [ '0.7.1', '0.7.1' ]
+38 silly lockFile 01aa05d6-xml2json-0-7-1 xml2json@0.7.1
+39 verbose lock xml2json@0.7.1 /home/vagrant/.npm/01aa05d6-xml2json-0-7-1.lock
+40 verbose read json /home/vagrant/.npm/xml2json/0.7.1/package/package.json
+41 silly lockFile 01aa05d6-xml2json-0-7-1 xml2json@0.7.1
+42 silly lockFile 01aa05d6-xml2json-0-7-1 xml2json@0.7.1
+43 silly lockFile 58d55085-xml2json xml2json@
+44 silly lockFile 58d55085-xml2json xml2json@
+45 silly resolved [ { name: 'xml2json',
+45 silly resolved     version: '0.7.1',
+45 silly resolved     author: { name: 'Andrew Turley' },
+45 silly resolved     email: 'aturley@buglabs.net',
+45 silly resolved     description: 'Converts xml to json and vice-versa, using node-expat.',
+45 silly resolved     repository:
+45 silly resolved      { type: 'git',
+45 silly resolved        url: 'git://github.com/buglabs/node-xml2json.git' },
+45 silly resolved     license: 'MIT',
+45 silly resolved     main: 'index',
+45 silly resolved     contributors: [ [Object] ],
+45 silly resolved     dependencies: { 'node-expat': '^2.3.7' },
+45 silly resolved     bin: { xml2json: 'bin/xml2json' },
+45 silly resolved     readme: '# Simple XML2JSON Parser\n[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/buglabs/node-xml2json?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nIt does not parse the following elements:\n\n* CDATA sections (*)\n* Processing instructions\n* XML declarations\n* Entity declarations\n* Comments\n\nThis module uses node-expat which will require extra steps if you want to get it installed on Windows. Please\nrefer to its [documentation](http://node-xmpp.org/doc/expat.html#installing-on-windows?).\n\n## Installation\n```\n$ npm install xml2json\n```\n\n## Usage\n```javascript\nvar parser = require(\'xml2json\');\n\nvar xml = "<foo>bar</foo>";\nvar json = parser.toJson(xml); //returns a string containing the JSON structure by default\nconsole.log(json);\n```\n## API\n\n```javascript\nparser.toJson(xml, options);\n```\n```javascript\nparser.toXml(json);\n```\n\n### Options object for `toJson`\n\nDefault values:\n```javascript\nvar options = {\n    object: false,\n    reversible: false,\n    coerce: true,\n    sanitize: true,\n    trim: true,\n    arrayNotation: false\n};\n```\n\n* **object:** Returns a Javascript object instead of a JSON string\n* **reversible:** Makes the JSON reversible to XML (*)\n* **coerce:** Makes type coercion. i.e.: numbers and booleans present in attributes and element values are converted from string to its correspondent data types. Coerce can be optionally defined as an object with specific methods of coercion based on attribute name or tag name, with fallback to default coercion.\n* **trim:** Removes leading and trailing whitespaces as well as line terminators in element values.\n* **arrayNotation:** XML child nodes are always treated as arrays\n* **sanitize:** Sanitizes the following characters present in element values:\n\n```javascript\nvar chars =  {\n    \'<\': \'&lt;\',\n    \'>\': \'&gt;\',\n    \'(\': \'&#40;\',\n    \')\': \'&#41;\',\n    \'#\': \'&#35;\',\n    \'&\': \'&amp;\',\n    \'"\': \'&quot;\',\n    "\'": \'&apos;\'\n};\n```\n\n### Options object for `toXml`\n\nDefault values:\n```javascript\nvar options = {\n    sanitize: false\n};\n```\n\n`sanitize: false` is the default option to behave like previous versions\n\n\n(*) xml2json tranforms CDATA content to JSON, but it doesn\'t generate a reversible structure.\n\n## License\n(The MIT License)\n\nCopyright 2014 BugLabs. All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to\ndeal in the Software without restriction, including without limitation the\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or\nsell copies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\nIN THE SOFTWARE.\n',
+45 silly resolved     readmeFilename: 'README.md',
+45 silly resolved     _id: 'xml2json@0.7.1',
+45 silly resolved     _from: 'xml2json@' } ]
+46 info install xml2json@0.7.1 into /var/www/public
+47 info installOne xml2json@0.7.1
+48 verbose from cache /home/vagrant/.npm/xml2json/0.7.1/package/package.json
+49 info /var/www/public/node_modules/xml2json unbuild
+50 verbose read json /var/www/public/node_modules/xml2json/package.json
+51 verbose tar unpack /home/vagrant/.npm/xml2json/0.7.1/package.tgz
+52 silly lockFile bfe5c1f6-www-public-node-modules-xml2json /var/www/public/node_modules/xml2json
+53 verbose lock /var/www/public/node_modules/xml2json /home/vagrant/.npm/bfe5c1f6-www-public-node-modules-xml2json.lock
+54 silly lockFile 193a937b-t-npm-xml2json-0-7-1-package-tgz /home/vagrant/.npm/xml2json/0.7.1/package.tgz
+55 verbose lock /home/vagrant/.npm/xml2json/0.7.1/package.tgz /home/vagrant/.npm/193a937b-t-npm-xml2json-0-7-1-package-tgz.lock
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm extractEntry .npmignore
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm extractEntry index.js
+61 silly gunzTarPerm extractEntry t.js
+62 silly gunzTarPerm extractEntry .editorconfig
+63 silly gunzTarPerm extractEntry Makefile
+64 silly gunzTarPerm extractEntry bin/xml2json
+65 silly gunzTarPerm extractEntry lib/index.js
+66 silly gunzTarPerm extractEntry lib/json2xml.js
+67 silly gunzTarPerm extractEntry lib/sanitize.js
+68 silly gunzTarPerm extractEntry lib/xml2json.js
+69 silly gunzTarPerm extractEntry test/.npmignore
+70 silly gunzTarPerm extractEntry test/coerce-overhead.js
+71 silly gunzTarPerm extractEntry test/test-array-notation.js
+72 silly gunzTarPerm extractEntry test/test-coerce.js
+73 silly gunzTarPerm extractEntry test/test-reorder.js
+74 silly gunzTarPerm extractEntry test/test-space.js
+75 silly gunzTarPerm extractEntry test/test-xmlsanitize.js
+76 silly gunzTarPerm extractEntry test/test.js
+77 silly gunzTarPerm extractEntry test/fixtures/large.json
+78 silly gunzTarPerm extractEntry test/fixtures/array-notation.json
+79 silly gunzTarPerm extractEntry test/fixtures/coerce.json
+80 silly gunzTarPerm extractEntry test/fixtures/coerce.xml
+81 silly gunzTarPerm extractEntry test/fixtures/domain-reversible.json
+82 silly gunzTarPerm extractEntry test/fixtures/domain.json
+83 silly gunzTarPerm extractEntry test/fixtures/domain.xml
+84 silly gunzTarPerm extractEntry test/fixtures/array-notation.xml
+85 silly gunzTarPerm extractEntry test/fixtures/large.xml
+86 silly gunzTarPerm extractEntry test/fixtures/reorder.json
+87 silly gunzTarPerm extractEntry test/fixtures/reorder.xml
+88 silly gunzTarPerm extractEntry test/fixtures/spacetext.json
+89 silly gunzTarPerm extractEntry test/fixtures/spacetext.xml
+90 silly gunzTarPerm extractEntry test/fixtures/xmlsanitize.json
+91 silly gunzTarPerm extractEntry test/fixtures/xmlsanitize.xml
+92 verbose read json /var/www/public/node_modules/xml2json/package.json
+93 silly lockFile bfe5c1f6-www-public-node-modules-xml2json /var/www/public/node_modules/xml2json
+94 silly lockFile bfe5c1f6-www-public-node-modules-xml2json /var/www/public/node_modules/xml2json
+95 silly lockFile 193a937b-t-npm-xml2json-0-7-1-package-tgz /home/vagrant/.npm/xml2json/0.7.1/package.tgz
+96 silly lockFile 193a937b-t-npm-xml2json-0-7-1-package-tgz /home/vagrant/.npm/xml2json/0.7.1/package.tgz
+97 info preinstall xml2json@0.7.1
+98 verbose from cache /var/www/public/node_modules/xml2json/package.json
+99 verbose readDependencies using package.json deps
+100 verbose from cache /var/www/public/node_modules/xml2json/package.json
+101 verbose readDependencies using package.json deps
+102 verbose cache add [ 'node-expat@^2.3.7', null ]
+103 verbose cache add name=undefined spec="node-expat@^2.3.7" args=["node-expat@^2.3.7",null]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: 'node-expat@^2.3.7',
+104 verbose parsed url   path: 'node-expat@^2.3.7',
+104 verbose parsed url   href: 'node-expat@^2.3.7' }
+105 verbose cache add name="node-expat" spec="^2.3.7" args=["node-expat","^2.3.7"]
+106 verbose parsed url { protocol: null,
+106 verbose parsed url   slashes: null,
+106 verbose parsed url   auth: null,
+106 verbose parsed url   host: null,
+106 verbose parsed url   port: null,
+106 verbose parsed url   hostname: null,
+106 verbose parsed url   hash: null,
+106 verbose parsed url   search: null,
+106 verbose parsed url   query: null,
+106 verbose parsed url   pathname: '^2.3.7',
+106 verbose parsed url   path: '^2.3.7',
+106 verbose parsed url   href: '^2.3.7' }
+107 verbose addNamed [ 'node-expat', '^2.3.7' ]
+108 verbose addNamed [ null, null ]
+109 silly lockFile 25ebd3bf-node-expat-2-3-7 node-expat@^2.3.7
+110 verbose lock node-expat@^2.3.7 /home/vagrant/.npm/25ebd3bf-node-expat-2-3-7.lock
+111 info addNameTag [ 'node-expat', '^2.3.7' ]
+112 verbose url raw node-expat
+113 verbose url resolving [ 'https://registry.npmjs.org/', './node-expat' ]
+114 verbose url resolved https://registry.npmjs.org/node-expat
+115 info trying registry request attempt 1 at 14:32:55
+116 verbose etag "4SC06OK14YVRCAPUQJFCGOEV2"
+117 http GET https://registry.npmjs.org/node-expat
+118 http 304 https://registry.npmjs.org/node-expat
+119 silly registry.get cb [ 304,
+119 silly registry.get   { date: 'Mon, 29 Jun 2015 14:46:13 GMT',
+119 silly registry.get     via: '1.1 varnish',
+119 silly registry.get     'cache-control': 'max-age=60',
+119 silly registry.get     etag: '"4SC06OK14YVRCAPUQJFCGOEV2"',
+119 silly registry.get     age: '0',
+119 silly registry.get     connection: 'keep-alive',
+119 silly registry.get     'x-served-by': 'cache-lhr6323-LHR',
+119 silly registry.get     'x-cache': 'HIT',
+119 silly registry.get     'x-cache-hits': '1',
+119 silly registry.get     'x-timer': 'S1435589173.448452,VS0,VE165',
+119 silly registry.get     vary: 'Accept' } ]
+120 verbose etag node-expat from cache
+121 silly lockFile 25ebd3bf-node-expat-2-3-7 node-expat@^2.3.7
+122 silly lockFile 25ebd3bf-node-expat-2-3-7 node-expat@^2.3.7
+123 verbose about to build /var/www/public/node_modules/xml2json
+124 info /var/www/public/node_modules/xml2json unbuild
+125 verbose from cache /var/www/public/node_modules/xml2json/package.json
+126 info preuninstall xml2json@0.7.1
+127 info uninstall xml2json@0.7.1
+128 verbose true,/var/www/public/node_modules,/var/www/public/node_modules unbuild xml2json@0.7.1
+129 verbose /var/www/public/node_modules/.bin,[object Object] binRoot
+130 info postuninstall xml2json@0.7.1
+131 error Error: No compatible version found: node-expat@'^2.3.7'
+131 error Valid install targets:
+131 error ["0.0.4","0.0.5","0.0.6","1.0.0","1.0.1","1.1.0","1.1.1","1.2.0","1.3.0","1.3.1","1.3.2","1.4.0","1.4.1","1.4.2","1.4.3","1.4.4","1.4.5","1.5.0","1.6.0","1.6.1","2.0.0","2.1.0","2.1.1","2.1.2","2.1.3","2.1.4","2.2.0","2.3.0","2.3.1","2.3.2","2.3.3","2.3.4","2.3.5","2.3.6","2.3.7","2.3.8"]
+131 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:685:10)
+131 error     at /usr/local/lib/node_modules/npm/lib/cache.js:607:10
+131 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+131 error     at Object.oncomplete (fs.js:107:15)
+132 error If you need help, you may report this log at:
+132 error     <http://github.com/isaacs/npm/issues>
+132 error or email it to:
+132 error     <npm-@googlegroups.com>
+133 error System Linux 2.6.32-431.el6.x86_64
+134 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "xml2json"
+135 error cwd /var/www/public
+136 error node -v v0.10.4
+137 error npm -v 1.2.18
+138 verbose exit [ 1, true ]
