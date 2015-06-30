@@ -7,7 +7,7 @@ var colors 					= 	require('colors/safe');
 var mkdirp 					=	require('mkdirp');
 
 //vars
-var appUrl 					= 	"http://www.thespace.org";
+var appUrl 					= 	"http://test.thespace.org";
 var siteMapUri 				= 	"/sitemap.xml";
 var fullUrl 				= 	appUrl + siteMapUri;
 var totalNumberOfFiles		=	0;
