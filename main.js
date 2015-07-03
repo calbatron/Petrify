@@ -111,22 +111,7 @@ function getPage(url) {
 
 
 function parseXML(xml) {
-	var deferred = Q.defer();
-
-
-	parseString(xml, function(err, result) {
-		if (err) {
-			cl('there is an error with parseXML', 0, 4);
-		}
-		else {
-	    loopJSON(result).then(function() {
-	    	cl("Finished Downloading Pages", 1, 2);
-	    	deferred.resolve();
-	    });
-		}
-	});
-
-	return deferred.promise;
+	
 }
 
 	
