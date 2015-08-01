@@ -2,7 +2,7 @@ var Petrify = require('./lib/petrify-main.js');
 
 
 //set url for sitemap
-Petrify.url = "http://test.thespace.org";
+Petrify.url = "http://fe.test.auto.thespace.org";
 //location of sitemap or array of urls
 // Petrify.sitemap = 	[
 // 					"http://test.thespace.org",
